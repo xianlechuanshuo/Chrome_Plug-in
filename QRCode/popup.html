@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>二维码生成</title>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+		}
+		body{
+			width:256px;
+		}	
+
+		section div{
+			height: 256px;
+		}
+	</style>
+</head>
+<body>
+	<section>
+	<!--注意url必须带上"http://"或"https://"，否则用微信扫出来，
+	    只显示网址名文本，不会跳转到这个网址-->
+		<div id="qrcode"></div>
+		 <script src="js/qrcode.js"></script> 
+		 <script src="js/popup.js"></script>
+	</section>
+</body>
+</html>
