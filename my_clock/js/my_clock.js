@@ -1,8 +1,8 @@
-var date=new Date();
 function getTime(){
 	"use strict";
 	let clock=document.getElementById("clock_div");
-	let y=date.getFullYear(),
+	let date=new Date(),
+	y=date.getFullYear(),
 	m=date.getMonth(),
 	d=date.getDate(),
 	h=date.getHours(),
