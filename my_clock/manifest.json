@@ -1,7 +1,7 @@
 {
 	"name":"我的时钟",
 	"manifest_version":2,
-	"version":"2.0",
+	"version":"3.0",
 	"description":"我的第一个Chrome扩展",
 	"icons":{
 		"16":"images/icon16.png",

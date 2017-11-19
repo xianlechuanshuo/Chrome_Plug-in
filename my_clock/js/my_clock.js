@@ -8,8 +8,8 @@ function getTime(){
 	h=date.getHours(),
 	mi=date.getMinutes(),
 	s=date.getSeconds(),
-	w=date.getDay(),
-	mw=getMonthWeek(y,m,d);
+	w=date.getDay();
+
 
 	m=m<10?"0"+m:m;
 	d=d<10?"0"+d:d;
@@ -19,9 +19,9 @@ function getTime(){
 	s=s<10?"0"+s:s;
 	w=getWeek(w);
 
-
-	//2017/09/15 19:16:34 周日
-	date=`${y}/${m}/${d} ${h}:${mi}:${s} ${w} 本月第${mw}周`;
+	//2017/11/19 16:52:56 周日 本月第3周
+	//注意getYear()和getFullYear()区别，计算本月第几周，用getYear()
+	date=`${y}/${m}/${d} ${h}:${mi}:${s} ${w} 本月第${getMonthWeek(date.getYear(), m, d)}周`;
 	clock.innerHTML=date;
 
 
